@@ -32,7 +32,7 @@ def plot(name, func_a, func_t, X, Y,
 
     # --- Первый график: F(a) ---
     plt.figure(figsize=(8, 6))
-    plt.plot(a_values, Ji_a, label=f"{name}(a)")
+    plt.plot(a_values, Ji_a, label=f"{name}(a)", color="black")
     plt.scatter(a_opt, val_a, color='red', s=100, zorder=5, label=f"a* = {a_opt:.4f}")
     plt.title(f"{name}(a)")
     plt.xlabel("a")
@@ -45,7 +45,7 @@ def plot(name, func_a, func_t, X, Y,
 
     # --- Второй график: F(t) ---
     plt.figure(figsize=(8, 6))
-    plt.plot(t_values, Ji_t, label=f"{name}(t)")
+    plt.plot(t_values, Ji_t, label=f"{name}(t)", color="blue")
     plt.scatter(t_opt, val_t, color='red', s=100, zorder=5, label=f"t* = {t_opt:.4f}")
     plt.title(f"{name}(t)")
     plt.xlabel("t")

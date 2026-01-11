@@ -62,7 +62,6 @@ except Exception as e:
 
 
 def interval_mode(intervals):
-    # === Приведение к списку, если пришёл np.ndarray ===
     if isinstance(intervals, np.ndarray):
         intervals = intervals.tolist()
     if not intervals:

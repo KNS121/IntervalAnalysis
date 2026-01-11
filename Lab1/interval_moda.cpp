@@ -32,7 +32,7 @@ extern "C" {
         return result;
     }
 
-    // Функция, которая возвращает указатель на выделенную память
+
     DLL_EXPORT IntervalArray* interval_moda_cpp(
         const double* a_arr,
         const double* b_arr,
